@@ -1,0 +1,336 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: #dadada;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+    overflow-x: hidden;
+}
+
+#main {
+    background-color: rgb(21, 21, 21);
+}
+
+#full-scr-nav {
+    height: 100vh;
+    width: 100vw;
+    background-color: #dadada;
+    color: rgb(28, 27, 27);
+    position: absolute;
+    transition: all ease .8s;
+    top: -100vh;
+    z-index: 99;
+}
+
+#full-scr-nav>h1 {
+    font-size: 200px;
+    padding: 140px 100px;
+    color: rgb(28, 27, 27);
+
+}
+
+#nav {
+    position: absolute;
+    z-index: 99;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    padding: 0 90px;
+}
+
+#nav>h2 {
+    transition: all ease .8s;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 10px;
+}
+
+#nav #nav-prt2 {
+    transition: all ease .8s;
+    display: flex;
+    align-items: baseline;
+    gap: 30px;
+}
+
+#nav-prt2 h3 {
+    transition: all ease .8s;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 4px;
+
+}
+
+#nav-prt2 i {
+    transition: all ease .8s;
+    font-size: 24px;
+    font-weight: 200;
+}
+
+#page1 {
+    position: relative;
+    min-height: 90vh;
+    width: 100vw;
+
+}
+
+#page1>h1 {
+    position: absolute;
+    font-size: 15vw;
+    letter-spacing: 15px;
+    left: 6%;
+    top: 17%;
+}
+
+#page1>h2 {
+    position: absolute;
+    font-size: 2.8vw;
+    letter-spacing: 2px;
+    line-height: 1;
+    left: 26%;
+    top: 60%;
+    width: 24%;
+}
+
+#page1>h3 {
+    position: absolute;
+    font-size: 0.9vw;
+    letter-spacing: 2px;
+    line-height: 1;
+    left: 66%;
+    top: 60%;
+}
+
+#page2 {
+    min-height: 100vh;
+    position: relative;
+    padding-bottom: 10vh;
+}
+
+#page2>img {
+    position: relative;
+    width: 100%;
+    left: 50%;
+    transform: translate(-50%, 0) scale(0.9);
+}
+
+#page2 h1 {
+    font-size: 40px;
+    width: 50%;
+    text-align: center;
+    transform-origin: 100% 100%;
+    transform: rotateX(-270deg);
+    opacity: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#h11 {
+    margin-top: 15vh;
+}
+
+#page2 h1 span {
+    font-size: 32px;
+    font-family: cursive;
+}
+
+#page4 {
+    height: 90vh;
+    width: 100%;
+    position: relative;
+    padding: 60px 160px;
+}
+
+#page4>h1 {
+    font-size: 8vw;
+}
+
+#page5 {
+    height: 130vh;
+    width: 100vw;
+    position: relative;
+
+}
+
+#page5-elems {
+    height: 20%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#page5-elem1 {
+    border-top: 1px solid #d1d1d1;
+    border-bottom: 0.5px solid #d1d1d1;
+    height: 100%;
+    width: 70%;
+    padding: 60px 60px;
+    font-size: 30px;
+    letter-spacing: 5px;
+    line-height: 60px;
+}
+
+#page5-elem2 {
+    border-top: 1px solid #d1d1d1;
+    border-bottom: 0.5px solid #d1d1d1;
+    border-left: 0.1px solid #d1d1d1;
+    width: 30%;
+    height: 100%;
+    padding: 60px 40px;
+    letter-spacing: 3px;
+    font-weight: 100;
+}
+
+#page5-content {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url(https://cdn.pixabay.com/animation/2023/03/19/02/34/02-34-11-741_512.gif);
+    background-size: cover;
+    gap: 4vw;
+    padding: 12px 0px;
+}
+
+#page5-content h1 {
+    font-size: 5vw;
+    letter-spacing: 5px;
+    line-height: 5vw;
+}
+
+#page5-content h1 span {
+    font-family: cursive;
+}
+
+#page5-content h2 {
+    font-size: 1.5vw;
+    letter-spacing: 1px;
+    line-height: 1.5vw;
+    font-weight: 400;
+}
+
+#page5-content img {
+    height: 80px;
+    width: 80px;
+}
+
+#page6 .slide1-of-h1 {
+    overflow-x: auto;
+    overflow-y: hidden;
+    cursor: default;
+}
+
+#page6 .slide2-of-h1 {
+    overflow-x: auto;
+    overflow-y: hidden;
+    cursor: default;
+}
+
+#page6 .slide2-of-h1 h1 {
+    transform: translateX(-100%);
+}
+
+#page6 .slide1-of-h1::-webkit-scrollbar {
+    display: none;
+}
+
+#page6 .slide2-of-h1::-webkit-scrollbar {
+    display: none;
+}
+
+#page6 h1 {
+    font-size: 22vh;
+    text-transform: uppercase;
+    line-height: 18vh;
+}
+
+#page6 h1 .one2 {
+    color: transparent;
+    -webkit-text-stroke: 1px #adadad;
+}
+
+#page7 {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    padding: 180px 50px;
+    align-items: center;
+    /* position: relative; */
+}
+
+#page7 h3 {
+    font-size: 4vw;
+}
+
+#page7 h3 span {
+    font-family: cursive;
+}
+
+#page7-elems {
+    margin-top: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100vw;
+    height: 50vh;
+}
+
+#page7-elems #element1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    height: 100%;
+    cursor: none;
+}
+
+#page7-elems #element2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    height: 100%;
+    cursor: none;
+}
+
+#page7-elems #element1 h1 {
+    font-size: 6vh;
+    position: relative;
+    z-index: 99;
+
+}
+
+#page7-elems #element2 h1 {
+    font-size: 6vh;
+    position: relative;
+    z-index: 99;
+}
+#element1>img{
+    position: absolute;
+    opacity: 0;
+    transition: opacity ease-in .2s;
+    height: 100px;
+    width: 100px;
+}
+#element2>img{
+    position: absolute;
+    transition: opacity ease-in .2s;
+    opacity: 0;
+    height: 100px;
+    width: 100px;
+}
